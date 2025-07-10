@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Last homework </title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    
+
+    <div id="users-container"></div>
+
+    <button id="addUserBtn">Add New User</button>
+
+    <dialog id="userModal">
+        <form id="userForm">
+            <input type="hidden" id="user-id"/>
+            <label>
+                First name:
+                <input type="text" id="user-first-name" required/>
+            </label>
+
+            <label>
+                Last Name:
+                <input type="text" id="user-last-name" required />
+            </label>
+
+            <label>
+                Email:
+                <input type="email" id="user-email" required />
+            </label>
+
+            <label>
+                Phone:
+                <input type="text" id="user-phone" required />
+            </label>
+
+            <label>
+                ID Number:
+                <input type="text" id="user-id-number" required />
+            </label>
+
+            <label>
+                ZIP Code:
+                <input type="text" id="user-zip-code" required />
+            </label>
+
+            <label>
+                Gender:
+                <select id="user-gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </label>
+
+                <button type="submit">Save</button>
+                <button type="button" id="closeModalBtn">Cancel</button>
+            </form>
+            </dialog>
+
+    <script src="script.js"></script>
+</body>
+</html>
